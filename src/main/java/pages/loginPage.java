@@ -27,21 +27,15 @@ public class loginPage {
     }
 
     private void enterUsername(String username) {
-        wait.until(
-                ExpectedConditions.visibilityOfElementLocated(usernameField)
-        ).sendKeys(username);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(usernameField)).sendKeys(username);
     }
 
     private void enterPassword(String password) {
-        wait.until(
-                ExpectedConditions.visibilityOfElementLocated(passwordField)
-        ).sendKeys(password);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(passwordField)).sendKeys(password);
     }
 
     private void clickLogin() {
-        wait.until(
-                ExpectedConditions.elementToBeClickable(loginButton)
-        ).click();
+        wait.until(ExpectedConditions.elementToBeClickable(loginButton)).click();
     }
 
     public void login(String username, String password) {
@@ -51,8 +45,6 @@ public class loginPage {
     }
 
     public String getErrorMessage() {
-        return wait.until(
-                ExpectedConditions.visibilityOfElementLocated(errorMessage)
-        ).getText();
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessage)).getText();
     }
 }
