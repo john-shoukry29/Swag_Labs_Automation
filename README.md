@@ -3,7 +3,9 @@
 Selenium WebDriver automation project for testing the [Swag Labs](https://www.saucedemo.com/) e-commerce application.
 
 The project uses Java, Selenium WebDriver, TestNG, Maven, and the Page Object Model (POM). Test data is managed using JSON to support data-driven testing.
+It covers **Login, Inventory, Cart, Checkout, Social Links, and Logout/Login scenarios**, with **JSON-based data-driven testing** for credentials and products.
 
+The framework uses **reusable page objects, explicit waits, dynamic locators, TestNG assertions, and browser tab handling** to validate both positive and negative application behavior.
 ---
 
 ## 🛠️ Technologies & Tools
